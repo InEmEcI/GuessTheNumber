@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Угадай число</title>
+    <!-- Подключаем CSS  -->		
+	<link rel="stylesheet" href="CSS/styles.css"/> 		
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+</head>
+
+<body>
+
+<h3 id="zagolovok">Попробуй угадать число</h3>
+
+	<div id = "forma">
+		<p>
+			ОТ	<input type = "number" id = "numberA" class = "knopka">			
+		</p>
+ 	
+		<p>
+			ДО	<input type = "number" id = "numberB" class = "knopka">			
+		<p> количество попыток:</p>
+		<input type = "number" id = "numberPopytok" class = "knopka">		
+			<br><br>
+			<button onclick = "chisloObjekt1.chisloVvedennoe = document.getElementById('vvedennoeChislo').value;								                             
+			ugadat()"                            
+		>ПОПРОБОВАТЬ</button><br><br>	
+
+
+		<button onclick = "chisloObjekt1 = vseFunkciiNaStranice();
+			proverka()">
+			
+		</button>	
+		<br><br>	
+	
+		<input type = "number" id = "vvedennoeChislo"><br><br>
+
+		<button onclick = "chisloObjekt1.chisloVvedennoe = document.getElementById('vvedennoeChislo').value;								                             
+                            ugadat()"                            
+						>ЭТО число!</button><br><br><br><br>
+
+		<div id = "new_game">
+			<button onclick = "window.location.reload ()">НОВАЯ ИГРА</button>   						
+		</div>	
+
+</div>
+	
+<!-- Подключаем JS -->
+<script src="JS/scripts222.js"></script>
+
+</body>
+
+</html>

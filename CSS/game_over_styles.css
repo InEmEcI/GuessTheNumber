@@ -1,0 +1,25 @@
+
+body{
+    background: black;
+    color: aliceblue;
+};
+
+button {
+    padding: 2%;
+    border-radius: 10px; /* Уголки */  
+}
+
+#game_over_p{
+    background: rgb(0, 0, 0);
+    color:rgb(0, 0, 0);
+    font-size: 350%;
+    text-align: center;
+    font-weight: bold;
+};
+
+/*
+#cherep {
+    display: none;    
+};
+*/
+

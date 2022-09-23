@@ -1,0 +1,61 @@
+
+#body{       
+    background-color: blue;
+    background: url('/img/nebo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;        
+}
+
+.new_game {
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;  
+  width: 15%;  
+  padding: 15px;
+  /*
+  background-color: rgb(0, 21, 255);
+  */
+  border: 1px solid rgb(225, 200, 200);
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  background-color: silver;
+}
+
+#forma {
+    display: block;
+    width: 20%;
+    height: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: rgb(0, 21, 255);
+    border: 4px double rgb(225, 200, 200); /* Параметры границы */
+    padding: 2%;
+    border-radius: 15px; /* Уголки */    
+}
+
+h3 {
+    font-size: 200%; /* Размер шрифта в процентах */
+    color: rgb(255, 255, 255);   
+    text-align: center;
+};
+
+
+
+.knopka{
+    width: 55%;
+    background: red;
+}
+
+input#vvedennoeChislo, input#numberA, input#numberB, input#numberPopytok {
+    width: 95%;    
+}
+
+
+#new_game{   
+    left: -50%;
+    transform: translate(25%, 0);    
+};
+
+

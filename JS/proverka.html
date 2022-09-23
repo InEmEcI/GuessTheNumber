@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+      <style>
+      input:invalid {
+      background-color: yellow
+      }
+    </style>
+  -->
+    <title>Document</title>    
+</head>
+<body>
+
+<!--
+  <h2>A basic form</h2>
+  <p>Please provide your first and last names.</p>
+  <form id="nameForm">
+   <fieldset>
+   <label for="firstName">First Name:</label><br/>
+   <input id="firstName" name="firstName" type="text" required/><br/>
+   <label for="lastName">Last Name:</label><br/>
+   <input type="text" name="lastName" id="lastName" required/><br/>
+   </fieldset>
+   <div>
+   <input type="submit" value="Submit the form"/>
+   <input type="reset" value="Reset the form"/>
+   </div>
+   <div>
+   <input id="firstNameBtn" type="button"
+   value="Check first name validity."/>
+   <input id="formBtn" type="button" value="Check form validity"/>
+   <input id="preventBtn" type="button"
+   value="Prevent default behavior"/>
+   <input id="restoreBtn" type="button"
+   value="Restore default behavior"/>
+   </div>
+  </form>
+  <div id="vResults"></div>
+  <script>
+    window.addEventListener( 'DOMContentLoaded', function () {
+      var outputDiv = document.getElementById( 'vResults' );
+      var firstName = document.getElementById( 'firstName' );
+      firstName.addEventListener("focus", function(){
+      outputDiv.innerHTML = '';
+      });
+      function preventDefaultHandler( evt ) {
+      evt.preventDefault();
+      }
+      firstName.addEventListener( 'invalid', function ( event ) {
+      outputDiv.innerHTML = 'firstName is invalid';
+      } );
+      document.getElementById( 'firstNameBtn' ).addEventListener(
+      'click', function () {
+      firstName.checkValidity();
+      } );
+      document.getElementById( 'formBtn' ).addEventListener(
+      'click', function () {
+      document.getElementById( 'nameForm' ).checkValidity();
+      } );
+      document.getElementById( 'preventBtn' ).addEventListener(
+      'click', function () {
+      firstName.addEventListener( 'invalid', preventDefaultHandler );
+      } );
+      document.getElementById( 'restoreBtn' ).addEventListener(
+      'click', function () {
+      firstName.removeEventListener( 'invalid', preventDefaultHandler );
+      } );
+     } );
+  </script>  
+-->
+
+
+
+<button onclick = inc(); id ="button" >0</button>
+
+<script>
+let count = 0;
+  function inc() {    
+    count++;
+    document.getElementById("button").innerHTML = count;
+  };
+</script>
+
+
+
+
+<!--
+
+<input type = "number" id = "vvedennoeChislo" class = "knopka">
+
+<br><br><br><br>
+
+<button onclick = validationTest()>НАЖМИ</button>
+
+-->
+
+<script>
+
+/*
+
+function validationTest(){
+  let s = document.getElementById('vvedennoeChislo');
+    if (s.validity.badInput) {      
+      console.log("Ошибка ввода!!!");
+    } else {      
+      console.log("Всё ОК");      
+    };
+};
+
+*/
+
+/*
+const regExp = /D/;
+
+if (regExp = true) {
+  console.log('Ошибка ввода')
+}
+    else {
+      console.log('Всё ОК')
+    };
+*/
+
+
+/*
+  function validationTest(){
+
+    let input = document.getElementById('vvedennoeChislo').value;
+
+ //   var input = document.getElementById("age");
+if (input.validity.badInput) {
+  console.log("Фигня а не число!");
+} else {
+  console.log("Всё ОК!");
+};
+
+/*
+
+/*
+    if(s == '') 
+        {
+        console.log("Фигня а не число!");
+        console.log(s);
+        } else {
+            console.log("Всё ОК!");
+            console.log(s);
+        };
+
+        //console.log(s);
+       };
+
+*/
+ 
+</script>
+
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,105 @@
+
+<head>
+    <link rel="stylesheet" href="CSS/styles.css"/> 	
+</head>
+<body>
+<!-- Подключаем JS -->
+<script>
+
+ /*function userSubmit() {
+        var UI=document.getElementById('userInput').value;
+        document.getElementById('result').innerHTML='You typed: '+UI;
+    };
+*/
+
+/*
+ let a;
+ let b;
+ let c; 
+*/
+
+// const form = document.getElementById('form');
+
+function allFunction(){
+
+      function getFormValueA(){
+        a = document.getElementById('numberA').value;
+        return a;
+      };
+
+      a = getFormValueA();
+      //console.log(a);
+
+      function getFormValueB(){
+        b = document.getElementById('numberB').value;
+        return b;
+      };
+
+      b = getFormValueB();
+      //console.log(b);
+
+      function getPopytkiValue(){
+        c = document.getElementById('popytki').value;
+        return c;
+      };
+
+      c = getPopytkiValue();
+      //console.log(c);
+
+      let data = {
+        chislo_1: a,
+        chislo_2: b,
+        popytki: c,
+      };
+
+      console.log (`ДО`);
+      console.log (data);
+  
+  return data;    
+
+};
+
+let data1 = allFunction();
+  console.log (`ПОСЛЕ`);
+  console.log (data1);
+
+ 
+</script>
+  
+
+
+
+
+
+    
+  <div>
+      <label>
+        Число 1:
+        <input type="number" id="numberA">
+      </label>
+    </div>
+    
+    <div>
+      <label>
+        Число 2:
+        <input type="number" id="numberB">
+      </label>
+    </div>
+   
+    <div>
+      Попыток:
+      <input type="number" id="popytki">
+    </div>
+    
+    <div>
+      <button onclick="allFunction()">Попробовать</button>
+    </div>
+
+
+
+
+<!-- Подключаем JS 
+<script src="scripts1.js"></script>  -->
+
+</body>
+      

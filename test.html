@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Change the Background Color with JavaScript</title>
+<script>
+    // Функция изменения цвета фона веб-страницы
+    function changeBodyBg(color){
+        document.body.style.background = color;
+    }
+    
+    // Функция изменения цвета фона заголовка
+    function changeHeadingBg(color){
+        document.getElementById("heading").style.background = color;
+    }
+
+function photo(){
+    let risunok = new Image(); //создание объекта 
+    risunok.src = "./img/game_over_2.gif"; //загрузка pict.jpg в память 
+    document.images[1].src = risunok.src; //отображение на экране    
+};
+
+photo();
+
+
+/*
+    function photo() {
+
+let cherep = document.createElement("img");
+cherep.scr = "./img/game_over_2.gif"
+//cherep.className = 'cherep_class';  
+//zagolovok.after('GAME OVER')
+
+let div1 = document.createElement('div');
+div1.append(cherep);
+document.body.append(div1)
+
+};
+*/
+
+
+
+</script>
+</head><body> <h1 id="heading">This is a heading</h1> <p>This is a paragraph of text.</p> <hr> <div> <label>Change Webpage Background To:</label> <button type="button" onclick="changeBodyBg('yellow');">Yellow</button> <button type="button" onclick="changeBodyBg('lime');">Lime</button> <button type="button" onclick="changeBodyBg('orange');">Orange</button> </div> <br> <div> <label>Change Heading Background To:</label> <button type="button" onclick="changeHeadingBg('red');">Red</button> <button type="button" onclick="changeHeadingBg('green');">Green</button> <button type="button" onclick="changeHeadingBg('blue');">Blue</button> </div>
+
+
+
+</body></html>

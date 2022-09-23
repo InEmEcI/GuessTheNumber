@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <!-- Подключаем CSS  -->
+
+		<link rel="stylesheet" href="CSS/game_over_styles.css"/>
+    
+    <title>GAME OVER</title>
+
+    <!-- Подключаем JS -->
+  
+</head>
+
+<body>
+
+<script>
+
+/*
+    function gameOver() {
+    //document.getElementById("zagolovok").innerHTML='GAME ' + ' OVER ! ! !';  
+    changeFontSize();
+    changeFontcolor('black');
+    changeBodyBg('red');
+    audio = new Audio(); // Создаём новый элемент Audio    
+    audio.src = './sound/game_over.mp3'; // Путь к звуковому файлу
+    audio.play();      
+  };
+
+  gameOver();
+
+*/  
+// GIF-ку на струницу поставить
+/*
+function photo() {
+  let newDiv = document.createElement('div');
+  newDiv.innerHTML = '<img src= "img/game_over_2.gif"/>';
+  chatDiv.appendChild(newDiv);
+  /*
+  let div = document.createElement('div');
+  //div.className = "alert";
+  div.innerHTML = <img src = "img/game_over_2.gif"></img>;
+  document.body.append(div);
+  
+};
+*/
+
+function changeFontColor(color){  
+  let testElem = document.getElementById('game_over_p');  
+  testElem.style.color = color;
+};
+
+function gameOver() {
+  
+  
+  audio = new Audio(); // Создаём новый элемент Audio    
+  audio.src = './sound/game_over.mp3'; // Путь к звуковому файлу
+  audio.play();  
+
+};
+
+function photo() {
+  document.getElementById('cherep').style = "display: block";
+};
+
+</script>  
+
+  <p id="game_over_p">GAME OVER ! ! !</p>
+
+<center>
+  <img id = "cherep" src="img/game_over_2.gif" style = "display: none" alt="game over">
+</center>
+
+
+<br><br><br><br><br><br><br><br>
+
+<center><button onclick="photo(); gameOver(); changeFontColor('red')">Ч Е Р Е П</button></center>
+
+<br><br><br><br>
+<!--
+<center> 
+  <button onclick="document.location.href = './index222.html'">попробовать ещё раз</button>
+</center>
+-->
+
+</body>
+
+</html>
