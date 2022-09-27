@@ -1,7 +1,7 @@
 
 #body{       
-    background-color: rgb(223, 238, 22);
-    /* background: url('/img/nebo.jpg'); */
+    /* background-color: rgb(43, 231, 238); */
+    background: url('/img/nebo.jpg');
     background-repeat: no-repeat;
     background-position: center;        
 }
