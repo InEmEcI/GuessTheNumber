@@ -3,8 +3,8 @@
     /* background-color: rgb(43, 231, 238); */
     /* background-image: url(img/nebo.jpg); */
     background-image: url('/img/nebo.jpg');
-    background-repeat: no-repeat;
-    background-position: center;        
+    /* background-repeat: no-repeat;
+    background-position: center;         */
 }
 
 .new_game {
