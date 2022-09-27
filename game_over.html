@@ -5,7 +5,6 @@
     
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     <!-- Подключаем CSS  -->
-
 		<link rel="stylesheet" href="CSS/game_over_styles.css"/>
     
     <title>GAME OVER</title>
@@ -52,13 +51,10 @@ function changeFontColor(color){
   testElem.style.color = color;
 };
 
-function gameOver() {
-  
-  
+function gameOver() {    
   audio = new Audio(); // Создаём новый элемент Audio    
   audio.src = './sound/game_over.mp3'; // Путь к звуковому файлу
   audio.play();  
-
 };
 
 function photo() {
@@ -79,11 +75,11 @@ function photo() {
 <center><button onclick="photo(); gameOver(); changeFontColor('red')">Ч Е Р Е П</button></center>
 
 <br><br><br><br>
-<!--
+
 <center> 
-  <button onclick="document.location.href = './index222.html'">попробовать ещё раз</button>
+  <button onclick="document.location.href = './index.html'">попробовать ещё раз</button>
 </center>
--->
+
 
 </body>
 

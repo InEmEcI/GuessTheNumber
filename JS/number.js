@@ -68,7 +68,7 @@ function newGame(){
     let div = document.createElement('div');
     /* укажем класс стилей и содержимое:  */
     div.className = "new_game";
-    div.innerHTML = '<a href="number.html">попробовать ещё раз...</a>'; 
+    div.innerHTML = '<a href="/index.html">попробовать ещё раз...</a>'; 
     document.body.append(div); //добавим наш div в раздел body
 };
 
