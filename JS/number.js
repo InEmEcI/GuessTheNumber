@@ -62,13 +62,13 @@ function validationTest(){
 };
 */
 
-
+// 
 function newGame(){
       //document.location.href = 'number.html';
     let div = document.createElement('div');
     /* укажем класс стилей и содержимое:  */
     div.className = "new_game";
-    div.innerHTML = '<a href="/index.html">попробовать ещё раз...</a>'; 
+    div.innerHTML = '<a href="../index.html">попробовать ещё раз...</a>'; 
     document.body.append(div); //добавим наш div в раздел body
 };
 
@@ -235,21 +235,24 @@ function noll(){
   document.getElementById("numberB").value = '';
 };
 
-
+// меняет цвет фона
 function changeBodyBg(color){
   document.body.style.background = color;  
 };
 
+// меняет цвет текста
 function changeFontColor(color){  
   let testElem = document.getElementById('zagolovok');  
   testElem.style.color = color;
 };
 
+// меняет размер шришта (55px) - надо сделать чтоб с меременной работала
 function changeFontSize() {
   let zagolovok = document.getElementById("zagolovok");
   zagolovok.style.fontSize = "55px";
 };
 
+// удаляет форму
 function removeForma() {
   var elem = document.getElementById('forma');
   elem.parentNode.removeChild(elem);
@@ -269,7 +272,7 @@ function gameOverChangeTitle() {
   document.getElementById("zagolovok").innerHTML='GAME ' + ' OVER ! ! !';
 };
 
-
+// действия если проиграл
 function gameOver() {
   document.getElementById("zagolovok").innerHTML='GAME ' + ' OVER ! ! !';             
   
@@ -286,10 +289,7 @@ function gameOver() {
   newGame();
 };
 
-/* -------------------------------------------------------------*/
-
-
-
+// действия если выиграл
 function victory() {
   document.getElementById("zagolovok").innerHTML='М О Л О Д Е Ц ! ! !';
      
@@ -305,6 +305,11 @@ function victory() {
 
   newGame();
 };
+
+/* -------------------------------------------------------------*/
+
+
+
 
 
 /* ---------------------- НАЧАЛО ПРОВЕРКИ------------------ */
@@ -339,12 +344,12 @@ if (a == b) {
 
 
 if (a > 0 && b > 0) // для положительных
-  {   
-  
-    if (a < b) {
-        
-        d = (b - a) + 1;
-                  
+  {     
+
+    if (a < b) {        
+
+        d = (b - a) + 1;                  
+
         if (d <= p)
         { 
           d--;
@@ -354,7 +359,7 @@ if (a > 0 && b > 0) // для положительных
     } else if (a > b) 
           { 
 
-            d = (a - b) + 1;            
+            d = (a - b) + 1;   
 
             if (d <= p)
               {
@@ -377,7 +382,7 @@ if (a < 0 && b > 0){
 
     p = Number(p);
 
-    d = a + b + 1; 
+    d = a + b + 1;
 
     if (d <= p){
       d--;      
@@ -433,12 +438,9 @@ if (a == 0 || b == 0)
 
           };  
 
-  };  
-  
-  // для НУЛЯ
+  };   
 
- 
-};
+}; // для НУЛЯ
 
 /* ---------------------- КОНЕЦ ПРОВЕРКИ------------------ */
 
@@ -512,7 +514,6 @@ function ugadat() {
 }; // function ugadat()
 
 
-/* ------------------------------------------------------ */
 
 /* ------------------------ НА ВАЛИДАЦИЮ ---------------- */
 
@@ -524,10 +525,6 @@ function validationTest(){
     ugadat()  
   };
 };
-
-/* ------------------------------------------------------- */
-    
-
 
                
   
