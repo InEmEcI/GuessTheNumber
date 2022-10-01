@@ -47,31 +47,16 @@ let chisloObjekt1 = {
 
 /* ----------------------------------------------- */
 
-
-
-/*
-function validationTest(){
-
-  let s = document.getElementById('vvedennoeChislo').value;
-
-  for(;s == '';) 
-      {
-      alert("Ошибка ввода!");
-      break;      
-      };
-};
-*/
-
-// 
+// создаёт кнопку для перезагрузки страницы с текстом и классом
 function newGame(){
-      //document.location.href = 'number.html';
-    let div = document.createElement('div');
-    /* укажем класс стилей и содержимое:  */
-    div.className = "new_game";    
-    div.innerHTML = '<a href="https://inemeci.github.io/GuessTheNumber/>попробовать ещё раз...</a>'; 
-    document.body.append(div); //добавим наш div в раздел body
-};
+  let myButton = document.createElement('button')
+  myButton.className = "new_game";    
+  myButton.innerHTML = "попробовать ещё раз..."
+  document.body.append(myButton)
+  myButton.addEventListener("click", () => document.location.reload())
+}
 
+//  vseFunkciiNaStranice()
 function vseFunkciiNaStranice() {
     function getValueA() {
       let number = document.getElementById("numberA").value;
